@@ -45,7 +45,7 @@ function task2($operator, ...$operand)
 // task3
 function task3($row, $col)
 {
-    if (is_numeric($row) && is_numeric($col)) {
+    if (is_int($row) && is_int($col)) {
         echo '<table>';
         for ($i = 1; $i <= $row; $i++) {
             echo '<tr>';
@@ -58,7 +58,7 @@ function task3($row, $col)
         }
         echo '</table>';
     } else {
-        echo 'Неверные данные';
+        echo '<p>Неверные данные! Введите целое число.</p>';
     }
 }
 
